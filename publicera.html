@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbetsprocess – Lab 1</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arbetsprocess – Lab 1</title>
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="bilder.html">Bilder</a></li>
-                <li><a href="publicera.html">Arbetsprocess</a></li>
-            </ul>
-        </nav>
-        <h1>Arbetsprocess</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Hur jag skapade webbplatsen</h2>
-            <p>Jag använde NodeJS med Vite för att skapa utvecklingsmiljön. Jag har initierat ett Git-repo, kopplat det till GitHub och skapat automatiserade processer för minifiering av CSS/JS och optimering av bilder.</p>
-        </section>
-    </main>
-    <script src="js/main.js"></script>
+<header>
+  <nav>
+    <h1>Automatisering</h1>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="bilder.html">Bilder</a></li>
+      <li><a href="publicera.html">Publicera</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <h2>Min arbetsprocess</h2>
+
+    <div class="card">
+      <p>Webbplatsen utvecklas i en <strong>development-branch</strong> i Git för att hålla arbetet organiserat. Alla ändringar committas med tydliga meddelanden. När koden är stabil, mergas den till <strong>main/prod-branch</strong> för publicering.</p>
+      
+      <h3>Vad som är gjort</h3>
+      <ul>
+        <li>Skapat projektstruktur med HTML, CSS, JavaScript och bilder.</li>
+        <li>Installerat och konfigurerat Vite för utveckling och build.</li>
+        <li>Lagt till 6 bilder i <code>src/images</code> och visat dem på bildsidan.</li>
+        <li>Skapat startsida, bildsida och publicera-sida med huvudmeny och responsiv design.</li>
+        <li>Använt Git för versionhantering och pushat filer till GitHub.</li>
+      </ul>
+
+      <h3>Automatisering med NodeJS och Vite</h3>
+      <ul>
+        <li><strong>CSS och JavaScript:</strong> Vite tar hand om minifiering och bundling automatiskt vid produktion (npm run build).</li>
+        <li><strong>Bilder:</strong> Alla bilder optimeras och konverteras till moderna format (WebP) vid build-processen.</li>
+        <li><strong>Hot reload:</strong> Under utveckling uppdateras sidan direkt i webbläsaren när filer ändras (npm run dev).</li>
+        <li><strong>Kopiering:</strong> Alla färdiga filer samlas i mappen <code>dist/</code> för enkel publicering.</li>
+      </ul>
+
+      <h3>Verktyg som används</h3>
+      <ul>
+        <li><strong>NodeJS:</strong> kör Vite och alla automatiserade processer.</li>
+        <li><strong>Vite:</strong> utvecklingsserver, bundling, minifiering och optimering.</li>
+        <li><strong>Git & GitHub:</strong> versionshantering, branches och koppling till host för automatisk publicering.</li>
+        <li><strong>Host (Vercel / Netlify / GitHub Pages):</strong> automatiserad publicering från main/prod-branch.</li>
+      </ul>
+
+      <p>På detta sätt sparar man tid och säkerställer att webbplatsen alltid är optimerad och korrekt uppdaterad när ändringar görs.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Automatiserad publicering med Git och NodeJS</p>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

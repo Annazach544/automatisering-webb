@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 1 – Startsida</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 1 – Startsida</title>
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="bilder.html">Bilder</a></li>
-                <li><a href="publicera.html">Arbetsprocess</a></li>
-            </ul>
-        </nav>
-        <h1>Välkommen till Lab 1 – Automatisering Webb</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Om uppgiften</h2>
-            <p>Syftet med denna labb är att skapa en automatiserad webbplats med NodeJS och Vite, där vi minifierar CSS och JS, optimerar bilder och publicerar till GitHub.</p>
-        </section>
-    </main>
-    <script src="js/main.js"></script>
+<header>
+  <nav>
+    <h1>Automatisering</h1>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="bilder.html">Bilder</a></li>
+      <li><a href="publicera.html">Publicera</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Automatisering av webbprojekt</h2>
+  <p>Denna webbplats är skapad med NodeJS, Vite och Git.</p>
+</section>
+
+<div class="container">
+  <div class="card-grid">
+    <div class="card">
+      <h3>Git & Github</h3>
+      <p>Versionhantering med branches. Automatisk publicering är möjlig via GitHub och en host som Vercel eller Netlify.</p>
+    </div>
+    <div class="card">
+      <h3>Vite</h3>
+      <p>Automatisk minifiering och optimering av CSS och JavaScript.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Skapad för kursen Frontend-baserad webbutveckling</p>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

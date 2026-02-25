@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilder – Lab 1</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilder – Lab 1</title>
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="bilder.html">Bilder</a></li>
-                <li><a href="publicera.html">Arbetsprocess</a></li>
-            </ul>
-        </nav>
-        <h1>Bilder</h1>
-    </header>
-    <main>
-        <section class="gallery">
-            <img src="images/bild1.jpg" alt="Bild 1">
-            <img src="images/bild2.jpg" alt="Bild 2">
-            <img src="images/bild3.jpg" alt="Bild 3">
-            <img src="images/bild4.jpg" alt="Bild 4">
-            <img src="images/bild5.jpg" alt="Bild 5">
-        </section>
-    </main>
-    <script src="js/main.js"></script>
+<header>
+  <nav>
+    <h1>Automatisering</h1>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="bilder.html">Bilder</a></li>
+      <li><a href="publicera.html">Publicera</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <h2>Optimerade bilder</h2>
+    <div class="image-grid">
+      <img src="/images/gra.webp?format=webp;avif&width=220;440" alt="grå mugg">
+      <img src="/images/svart.webp?format=webp;avif&width=220;440" alt="svart mugg">
+      <img src="/images/lila.webp?format=webp;avif&width=220;440" alt="lila mugg">
+      <img src="/images/gron.webp?format=webp;avif&width=220;440" alt="grön mugg">
+      <img src="/images/orange.webp?format=webp;avif&width=220;440" alt="orange mugg">
+      <img src="/images/rosa.webp?format=webp;avif&width=220;440" alt="rosa mugg">
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Automatiserad publicering med Git och NodeJS</p>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>
