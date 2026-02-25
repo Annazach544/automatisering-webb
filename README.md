@@ -15,4 +15,4 @@ Syftet var att:
 - Undersida med beskrivning av arbetsprocess
 
 ## Publicerad version
-Den officiella publicerade sidan finns på Netlify: https://699eea9ec6901d40f9133673--enchanting-pixie-f3d3e5.netlify.app/
+Den officiella publicerade sidan finns på Netlify: https://automatisering.netlify.app/
